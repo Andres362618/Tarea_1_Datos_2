@@ -142,6 +142,10 @@ public:
  */
 class List {
 
+private:
+    int value;
+    int next;
+
 public:
     Node *head;///< Puntero al primer nodo de la lista.
 
@@ -182,7 +186,24 @@ public:
             node_ptr = (Node *) node_ptr->getNext();
         }
         cout << endl;
-    };
+    }
+
+    int getValue(){
+        return this->value;
+    }
+
+    void setValue(int value){
+        this->value = value;
+    }
+
+    int getNext(){
+        return this->next;
+    }
+
+    void setNext(){
+        this->next = value;
+    }
+
 
 };
 
