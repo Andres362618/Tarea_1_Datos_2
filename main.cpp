@@ -203,8 +203,6 @@ public:
     void setNext(){
         this->next = value;
     }
-
-
 };
 
 /**
